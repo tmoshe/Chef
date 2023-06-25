@@ -16,7 +16,7 @@ execute "run-flask-apk"  do
        cwd '/home/ubuntu/app/'
        user 'root'
        action :run
-
+#test moshe1
 end
 
-#test moshe1
+
