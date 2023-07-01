@@ -1,3 +1,3 @@
 { 
-   "run_list": [ "recipe[app]" , "recipe[s3]" , "recipe[pyhton]" , "recipe[cron]" ] 
+  "run_list":["role[approle]"]
 }
