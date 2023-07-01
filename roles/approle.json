@@ -1,0 +1,10 @@
+{
+"name" : "approle",
+"override_attributes" : {
+  "s3" : {
+    "ver" : "19"
+    
+  }
+},
+"run_list":["recipe[pyhton]" , "recipe[s3]" ,  "recipe[app]",  "recipe[cron]"]
+}
