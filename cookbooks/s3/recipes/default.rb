@@ -14,7 +14,13 @@
 #  only_if { Dir.exist?('/home/ubuntu/app') } # Optional: Check if the directory exists
 #end
 
-#node.default["s3"]["version"] = "18"
+directory '/home/ubuntu/app' do
+  owner 'root'
+  group 'root'
+  mode '0777'
+  action :create
+end
+
 version = node["s3"]["ver"]
 
 
