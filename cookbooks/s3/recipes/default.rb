@@ -14,7 +14,7 @@ ruby_block 'delete_tar_files' do
   only_if { Dir.exist?('/home/ubuntu/app') } # Optional: Check if the directory exists
 end
 
-node.default["s3"]["version"] = "18"
+#node.default["s3"]["version"] = "18"
 version = node["s3"]["ver"]
 
 
