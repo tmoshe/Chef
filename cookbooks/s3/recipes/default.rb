@@ -4,15 +4,15 @@
 #
 # Copyright:: 2023, The Authors, All Rights Reserved.
 
-ruby_block 'delete_tar_files' do
-  block do
-    Dir.glob('/home/ubuntu/app/*.tar').each do |file|
-      File.delete(file)
-    end
-  end
-  action :run
-  only_if { Dir.exist?('/home/ubuntu/app') } # Optional: Check if the directory exists
-end
+#ruby_block 'delete_tar_files' do
+#  block do
+#    Dir.glob('/home/ubuntu/app/*.tar').each do |file|
+#      File.delete(file)
+#    end
+#  end
+#  action :run
+#  only_if { Dir.exist?('/home/ubuntu/app') } # Optional: Check if the directory exists
+#end
 
 #node.default["s3"]["version"] = "18"
 version = node["s3"]["ver"]
