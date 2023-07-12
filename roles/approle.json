@@ -2,7 +2,7 @@
 "name" : "approle",
 "override_attributes" : {
   "s3" : {
-    "ver" : "19"
+    "ver" : "1.0.0"
     
   }
 },
