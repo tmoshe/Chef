@@ -2,7 +2,7 @@
   "name": "approle",
   "override_attributes": {
     "s3": {
-      "ver": "3.4.1"
+      "ver": "1.0.1"
     }
   },
   "run_list": [
