@@ -25,7 +25,6 @@ version = node["s3"]["ver"]
 
 
 remote_file_s3 "/home/ubuntu/app/my-app-#{version}.tar" do
-#  bucket 'cloudschoolartifacts'
   bucket 'bucketcloudschool'
   remote_path "my-app-#{version}.tar"
   region 'eu-west-1'
