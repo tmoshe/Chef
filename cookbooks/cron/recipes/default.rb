@@ -7,6 +7,7 @@
 cron 'runinng_main' do
   minute '*/4'
   user 'root'
-  command 'bash /home/ubuntu/chef/cookbooks/cron/files/script.sh'
+  #command 'bash /home/ubuntu/chef/cookbooks/cron/files/script.sh'
+  command 'bash -c /home/ubuntu/chef/cookbooks/cron/files/script.sh'
   action :create
 end
