@@ -11,6 +11,7 @@ cd /home/ubuntu/chef
 git pull origin main
 #git clone https://github.com/tmoshe/chef.git
 chef-solo -c /home/ubuntu/chef/solo.rb -j /home/ubuntu/chef/runlist.json --chef-license=accept >> /home/ubuntu/chef.txt
+echo "Done!" >> /home/ubuntu/file2.txt
 
                                                                    
 
