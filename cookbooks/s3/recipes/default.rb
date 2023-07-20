@@ -27,6 +27,7 @@ version = node["s3"]["ver"]
 remote_file_s3 "/home/ubuntu/app/my-app-#{version}.tar" do
   bucket 'bucketcloudschool'
   remote_path "my-app-#{version}.tar"
+  file_cache_path "/tmp/s3-cache-status"
   region 'eu-west-1'
   action :create
 end
