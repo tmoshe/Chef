@@ -3,15 +3,12 @@
 # This is a sample Bash script
 # It prints a welcome message and current date
 
-sudo su
-echo "Welcome to the script!" >> /home/ubuntu/file2.txt
-echo "Today is $(date)" >> /home/ubuntu/file2.txt
-cd /home/ubuntu/chef
-#git remote add origin https://github.com/tmoshe/chef.git
-git pull origin main
-#git clone https://github.com/tmoshe/chef.git
-chef-solo -c /home/ubuntu/chef/solo.rb -j /home/ubuntu/chef/runlist.json --chef-license=accept >> /home/ubuntu/chef.txt
-echo "Done!" >> /home/ubuntu/file2.txt
+
+sudo echo "Welcome to the script!" >> /var/log/cron.log
+sudo echo "Today is $(date)" >> /var/log/cron.log
+sudo git -C /opt/chef/  pull origin main
+sudo chef-solo -c /opt/chef/solo.rb -j /opt/chef/runlist.json --chef-license=accept > /var/log/chef.log
+sudo echo "Done!" >> /var/log/cron.log
 
                                                                    
 
