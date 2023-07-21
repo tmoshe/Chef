@@ -3,7 +3,6 @@
 # This is a sample Bash script
 # It prints a welcome message and current date
 
-
 sudo echo "Welcome to the script!" >> /var/log/cron.log
 sudo echo "Today is $(date)" >> /var/log/cron.log
 sudo git -C /opt/chef/  pull origin main
