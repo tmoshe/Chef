@@ -6,7 +6,9 @@
 
 cron 'runinng_main' do
   minute '*/4'
-  user 'root'
+  mode '0755'
+  owner 'root'
+  #user 'root'
   #command 'bash /home/ubuntu/chef/cookbooks/cron/files/script.sh'
   #command 'bash -c /home/ubuntu/chef/cookbooks/cron/files/script.sh'
   command 'bash -c /opt/chef/chef/cookbooks/cron/files/script.sh'
