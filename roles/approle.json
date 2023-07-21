@@ -8,7 +8,7 @@
   "run_list": [
     "recipe[pyhton]",
     "recipe[s3]",
-    "recipe[app]",
-    "recipe[cron]"
+    "recipe[app]"
+    
   ]
 }
