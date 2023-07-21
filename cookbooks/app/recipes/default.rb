@@ -13,7 +13,8 @@
 
 execute "run-flask-apk"  do
        command 'nohup python3 app.py > /dev/null 2>&1 &'
-       cwd '/home/ubuntu/app/'
+       #cwd '/home/ubuntu/app/'
+       cwd '/opt/app'
        user 'root'
        action :run
 #test moshe1232323234456
