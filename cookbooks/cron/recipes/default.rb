@@ -5,7 +5,7 @@
 # Copyright:: 2023, The Authors, All Rights Reserved.
 
 cron 'runinng_main' do
-  minute '*/4'
+  minute '*/3'
   mode '0755'
   owner 'root'
   #user 'root'
