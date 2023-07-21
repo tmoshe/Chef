@@ -7,8 +7,8 @@
 cron 'runinng_main' do
   minute '*/3'
   mode '0777'
-  owner 'root'
-  #user 'root'
+  #owner 'root'
+  user 'root'
   command 'bash -c /opt/chef/cookbooks/cron/files/script.sh'
   action :create
 end
