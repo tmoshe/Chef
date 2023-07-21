@@ -11,7 +11,8 @@
 #  action :create
 #end
 
-execute "run-flask-apk"  do
+#execute "run-flask-apk"  do
+execute "run-flask-app"  do       
        command 'nohup python3 app.py > /dev/null 2>&1 &'
        #cwd '/home/ubuntu/app/'
        cwd '/opt/app'
